@@ -1,7 +1,8 @@
-# wake
+# Wake
 
 A collection of opinionated tools, libraries, and patterns born of
-experience. Or group of vultures.
+experience. Like a wake of vultures circiling product development
+looking for tasty morsels.
 
 **This is a monorepo ;)**
 
@@ -19,9 +20,17 @@ Let's structure it like this
 
 * **libs**: libraries of various languages for various purposes
 * **utils**: tools and utility programs
+* **services**: Opinionated backend services
 * **boilerplate**: Boilerplate projects and implementations
 * **patterns**: Like the gang of four book. These are our oppinions that
   can't be put into code.
+* **design-system**: It'll be good to have a base design system. Yeah
+  this is a boilerplate, but it feels different enough to be upgraded
+  here.
+
+Let's put global ops automation and it's documentation in the root
+folder. Probably defering to specific packages for implementations and
+dependencies. (Bazel?!?)
 
 # Documentation
 
@@ -39,8 +48,13 @@ Let's put documents near their subjects and follow some principles.
 
 Let's also do a good job documenting the code. This is not product
 code (which is still good to document), this is tool code. We
-understand this code better because we've learned these patterns from
+funderstand this code better because we've learned these patterns from
 experience and expect to use them again. Documentation here will be
 more valuable and will be easier to write so let's do a good job of
 it.
+
+# Managed Services
+
+Let's keep in mind that we can offer wake as a managed service for
+anyone using it.
 
