@@ -1,0 +1,23 @@
+{
+  "name": "cfg",
+  "version": "0.0.0-prealpha",
+  "description": "Just enough of a configuration library to get back to what you were doing.",
+  "main": "index.js",
+  "author": "Emblem Studio",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc --build",
+    "todo-list": "git grep TODO",
+    "lint": "ts-standard",
+    "format": "ts-standard --fix",
+    "ci": "yarn build && jest --no-colors --collect-coverage && yarn lint",
+    "test": "yarn build && jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "ts-standard": "^10.0.0",
+    "typescript": "^4.4.3"
+  }
+}
